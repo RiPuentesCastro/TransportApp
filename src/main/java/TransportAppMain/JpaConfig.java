@@ -16,9 +16,9 @@ public class JpaConfig {
     public DataSource datasource() {
         return DataSourceBuilder.create()
                 .driverClassName("com.mysql.cj.jdbc.Driver")
-                .url("jdbc:mysql://127.0.0.1:3306/togomex_db")
-                .username("togomex_db")
-                .password("TogoMex2021*")
+                .url("jdbc:mysql://127.0.0.1:3306/transportapp_db")
+                .username("transportapp_db")
+                .password("TransportApp2022*")
                 .build();
     }
 
