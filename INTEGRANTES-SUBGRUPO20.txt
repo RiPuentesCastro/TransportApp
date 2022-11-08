@@ -1,0 +1,9 @@
+PROYECTO DE SOFTWARE BASADO EN HERRAMIENTAS DE INTEGRACIÓN CONTINUA
+
+Integrantes subgrupo20:
+
+                  Daniel Andrés Jimenez Sánchez cod: 100052645
+	Yeison Bernardo Marquéz Ortiz  cod: 100239659
+	Ricardo Puentes Castro  cod:  1611024539
+	John Alexander arguello Ospina  cod:1010016283
+
