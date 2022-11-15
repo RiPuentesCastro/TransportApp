@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 
+
 @Configuration
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 public class JpaConfig {
@@ -16,9 +17,9 @@ public class JpaConfig {
     public DataSource datasource() {
         return DataSourceBuilder.create()
                 .driverClassName("com.mysql.cj.jdbc.Driver")
-                .url("jdbc:mysql://127.0.0.1:3306/transportapp_db")
-                .username("transportapp_db")
-                .password("TransportApp2022*")
+                .url("jdbc:mysql://localhost:3306/transportapp")
+                .username("transportapp")
+                .password("TransPortApp2022*")
                 .build();
     }
 

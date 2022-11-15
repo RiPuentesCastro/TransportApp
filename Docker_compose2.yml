@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - mysql_network
+
+    command: java -Djava.security.egd=file:/dev/./urandom -jar /project/target/TransportApp-1.0-SNAPSHOT.jar
+
+    links:
+      - db
+
+networks:
+  mysql_network:
+    name: mysql_net
+
+
+
