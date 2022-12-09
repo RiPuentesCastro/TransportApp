@@ -17,7 +17,7 @@ public class JpaConfig {
     public DataSource datasource() {
         return DataSourceBuilder.create()
                 .driverClassName("com.mysql.cj.jdbc.Driver")
-                .url("jdbc:mysql://localhost:3306/transportapp")
+                .url("jdbc:mysql://192.168.80.23:13306/transportapp")
                 .username("transportapp")
                 .password("TransPortApp2022*")
                 .build();

@@ -13,7 +13,7 @@ services:
     networks:
       - net
     ports:
-      - '3306:3306'
+      - '13306:3306'
     volumes:
       - mysql_data:/var/lib/mysql
 
@@ -24,7 +24,7 @@ services:
     ports:
       - '18080:8080'
 
-    command: java -Djava.security.egd=file:/dev/./urandom -jar /project/target/TransportApp-1.0-SNAPSHOT.jar
+    command: java -Djava.security.egd=file:/dev/./urandom -jar /project/build/libs/TransportApp-1.0-SNAPSHOT.jar
     networks:
       - net
     depends_on:
